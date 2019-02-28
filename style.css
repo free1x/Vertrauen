@@ -1,0 +1,53 @@
+/*
+Theme Name: Vertrauen
+Author: NaCo
+Author URI: https://nco.im/
+Description: The minimalist design of the front end creates this perfect Vertrauen theme, giving it a unique soul!
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-colors, custom-header, custom-logo, editor-style, featured-images, footer-widgets, post-formats, sticky-post, theme-options
+Version: 1.0
+Text Domain: Vertrauen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Domain Path: /languages/
+Tags:
+*/
+
+body {
+	background:#eee;
+}
+
+body, input, textarea {
+	color: #373737;
+	font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.625;
+}
+
+p {
+	margin:0 0 10px 0;
+}
+
+h1, h2, h3 {
+	margin:0 0 10px 0;
+}
+
+#page {
+	background:#fff;
+	min-width:440px;
+	max-width:740px;
+	width:60%;
+	margin:20px auto;
+}
+
+header {
+	background: #6f6f6f;
+	padding:30px 40px;
+}
+
+.entry-content {
+
+}
+
+.entry-content img {
+	max-width: 100%;
+}

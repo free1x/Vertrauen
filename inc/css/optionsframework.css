@@ -45,8 +45,8 @@
 /* Options Framework Admin Styles */
 
 #optionsframework {
-    max-width:840px;
-    background:#fff;
+	max-width:840px;
+	background:#fff;
 	font-family: Noto Sans SC,sans-serif;
 	margin-top: 20px;
 }
@@ -94,7 +94,7 @@
 	width:100%;
 }
 #optionsframework .controls input[type=text].wp-color-picker {
-    width: 65px;
+	width: 65px;
 }
 #optionsframework .controls select, #optionsframework .controls textarea {
 	margin-bottom:10px;

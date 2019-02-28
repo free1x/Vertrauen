@@ -8,7 +8,7 @@ A clean, simple and responsive theme of WordPress, based on [Bootstrap4](https:/
 Within the download you'll find the following directories and files. You'll see something like this :point_down:
 
 ```
-Dobby
+Vertrauen
 ├── 404.php
 ├── LICENSE
 ├── author.php

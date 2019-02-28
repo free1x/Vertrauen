@@ -1,8 +1,8 @@
-# Dobby
+# Vertrauen
 
 A clean, simple and responsive theme of WordPress, based on [Bootstrap4](https://github.com/twbs/bootstrap). Created and maintained by Vtrois. Stay up to date with the latest release and announcements on [Bulletin Board](https://github.com/Vtrois/Dobby/issues). 
 
-![Dobby Demo](https://s1.ax1x.com/2018/02/22/9U8asP.jpg)
+![Vertrauen Demo](https://s1.ax1x.com/2018/02/22/9U8asP.jpg)
 
 ## Structure
 Within the download you'll find the following directories and files. You'll see something like this :point_down:
@@ -117,8 +117,8 @@ Dobby
 
 ## License
 
-- The Dobby Html, CSS, JavaScript and PHP files are licensed under the GNU General Public License v3:
+- The Vertrauen Html, CSS, JavaScript and PHP files are licensed under the GNU General Public License v3:
   - http://www.gnu.org/licenses/gpl-3.0.html
 
-- The Dobby documentation is licensed under the CC BY 4.0 License:
+- The Vertrauen documentation is licensed under the CC BY 4.0 License:
   - https://creativecommons.org/licenses/by/4.0

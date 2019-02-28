@@ -45,14 +45,13 @@ jQuery(document).ready(function() {
  * This is an example of filtering menu parameters
  */
 
-/*
+
 function prefix_options_menu_filter( $menu ) {
 	$menu['mode'] = 'menu';
-	$menu['page_title'] = __( 'Hello Options', 'textdomain');
-	$menu['menu_title'] = __( 'Hello Options', 'textdomain');
-	$menu['menu_slug'] = 'hello-options';
+	$menu['page_title'] = __( 'Vertrauen 主题设置', 'Vertrauen_Setting');
+	$menu['menu_title'] = __( '主题设置', 'Vertrauen_Setting');
+	$menu['menu_slug'] = 'Vertrauen-options';
 	return $menu;
 }
 
 add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
-*/

@@ -12,6 +12,9 @@ get_header(); ?>
 
 
 
+<div class="container banner">
+    
+</div>
 
 	<article>
 

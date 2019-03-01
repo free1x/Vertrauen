@@ -226,11 +226,36 @@ function optionsframework_options() {
             '2c-r-fixed' => $imagepath . '2cr.png'
         )
     );
+
+    //banner
+    $options[] = array(
+        'name' => __( '推荐设置', 'Vertrauen_Setting' ),
+        'type' => 'heading'
+    );
+
+    $options[] = array(
+        'name' => __( '轮播图', 'Vertrauen_Setting' ),
+        'desc' => __( '是否启用 Banner 推荐', 'Vertrauen_Setting' ),
+        'id' => 'content_banner',
+        'std' => '0',
+        'type' => 'checkbox'
+    );
+
+    $options[] = array(
+        'name' => __( '推荐展现图', 'theme-Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在首页展示.', 'theme-textdomain' ),
+        'id' => 'banner_content',
+        'type' => 'upload'
+    );
+
     //页脚设置
     $options[] = array(
         'name' => __( '页脚设置', 'Vertrauen_Setting' ),
         'type' => 'heading'
     );
+
+
+
     //结束
 
     $options[] = array(

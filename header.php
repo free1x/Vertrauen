@@ -68,10 +68,6 @@
             </div>
         </div>
     </nav>
-       <div class="container">
-
-
-       </div>
 </header>
 
 	<div id="page">

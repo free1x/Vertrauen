@@ -132,7 +132,13 @@ function optionsframework_options() {
         'std' => '1',
         'type' => 'checkbox'
     );
-
+    $options[] = array(
+        'name' => __( '搜索功能', 'Vertrauen_Setting' ),
+        'desc' => __( '是否开启 搜索功能', 'Vertrauen_Setting' ),
+        'id' => 'content_search',
+        'std' => '1',
+        'type' => 'checkbox'
+    );
     $options[] = array(
         'name' => __( 'Font Awesome 图标', 'Vertrauen_Setting' ),
         'desc' => __( '是否开启 Font Awesome 图标库', 'Vertrauen_Setting' ),

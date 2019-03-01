@@ -5,7 +5,8 @@
 .headerTools{
     padding: 15px 0;
     background: black;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 14px;
     box-shadow: 0 2px 2px #d8d8d8;
 }
 .headerToolsTime{
@@ -30,9 +31,24 @@
     color:white;
     text-decoration: none;
 }
+.header{
+    padding: 20px 0;
+    background: white;
+}
+.header_logo{
 
-
-
+}
+.header_logo>img{
+    width: 50px;
+    float: left;
+}
+.header_logo>span{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 48px;
+    color: #5c5c5c;
+}
 @media (min-width: 2100px){
     .container {
         max-width: 80%;

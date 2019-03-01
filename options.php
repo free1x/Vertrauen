@@ -104,7 +104,7 @@ function optionsframework_options() {
 
     $options[] = array(
         'name' => __( '站点 LOGO', 'Vertrauen_Setting' ),
-        'desc' => __( '不添加显示文字标题，推荐图片尺寸 200px*50px，保存成功则自动显示Logo图片.', 'Vertrauen_Setting' ),
+        'desc' => __( '不添加显示文字标题，推荐图片尺寸 50px*50px，保存成功则自动显示Logo图片.', 'Vertrauen_Setting' ),
         'id' => 'content_logo',
         'type' => 'upload'
     );
@@ -173,7 +173,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '网站标题', 'Vertrauen_Setting' ),
         'desc' => __( '网站标题', 'Vertrauen_Setting' ),
-        'id' => 'SEO_TITLE',
+        'id' => 'seo_title',
         'placeholder' => 'Vertrauen',
         'class' => 'mini',
         'type' => 'text'

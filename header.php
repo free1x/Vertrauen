@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> <?php if (of_get_option( 'content_prayer', 'no entry' )){echo 'style="FILTER: gray;-webkit-filter: grayscale(100%);"';}  ?>>
     <head>
         <?php  $transfer = get_stylesheet_directory_uri().'/static/'; ?>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -18,14 +18,11 @@
         <?php } ?>
     </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="background:<?php echo of_get_option( 'content_color', '#000' ); ?>">
 
 
 <?php  if (of_get_option( 'content_nav', 'no entry' )){ ?>
-
-
-
-    <div class="container-fluid headerTools">
+    <div class="container-fluid headerTools" >
         <div class="container">
             <div class="headerToolsTime">
                 <?php echo "当前时间 : ",date("Y 年 m 月 d 日",time()),"<br>" ?>
@@ -38,7 +35,17 @@
             <div class="clearfix"></div>
         </div>
     </div>
-
 <?php } ?>
+
+<header class="container-fluid header">
+       <div class="container">
+           <div class="header_logo">
+               <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
+               <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
+               <div class="clearfix"></div>
+           </div>
+           <div class="header_nav"></div>
+       </div>
+</header>
 
 	<div id="page">

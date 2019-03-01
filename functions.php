@@ -75,3 +75,8 @@ function Vertrauen_wp_title( $title, $sep ) {
     return $title;
 }
 
+register_nav_menus( array(
+    'headerTools'    => '顶部辅助栏',
+    'headerNav'    => '顶部导航栏',
+    'footerNav'    => '底部导航栏',
+) );

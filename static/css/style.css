@@ -1,3 +1,40 @@
 *{
     margin: 0;
+
+}
+.headerTools{
+    padding: 15px 0;
+    background: black;
+    font-weight: 300;
+    box-shadow: 0 2px 2px #d8d8d8;
+}
+.headerToolsTime{
+    color:white;
+    float: left;
+}
+.headerToolsNav{
+    float: right;
+}
+.headerTools-Nav{
+
+}
+.headerTools-Nav>ul{
+    margin-bottom: 0;
+}
+.headerTools-Nav>ul>li{
+    float: left;
+    list-style: none;
+    padding: 0 20px;
+}
+.headerTools-Nav>ul>li>a{
+    color:white;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 2100px){
+    .container {
+        max-width: 80%;
+    }
 }

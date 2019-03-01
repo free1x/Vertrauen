@@ -105,14 +105,14 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '站点 LOGO', 'Vertrauen_Setting' ),
         'desc' => __( '不添加显示文字标题，推荐图片尺寸 200px*50px，保存成功则自动显示Logo图片.', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_LOGO',
+        'id' => 'content_logo',
         'type' => 'upload'
     );
 
     $options[] = array(
         'name' => __( '站点配色', 'Vertrauen_Setting' ),
         'desc' => __( '站点头部颜色', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_COLOR',
+        'id' => 'content_color',
         'std' => 'White',
         'type' => 'color',
     );
@@ -120,7 +120,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '头部辅助栏', 'Vertrauen_Setting' ),
         'desc' => __( '是否开启辅助栏', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_ADDED',
+        'id' => 'content_nav',
         'std' => '1',
         'type' => 'checkbox'
     );
@@ -128,7 +128,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '导航栏浮动', 'Vertrauen_Setting' ),
         'desc' => __( '开启后导航栏跟随页面顶部', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_HEADER',
+        'id' => 'content_header',
         'std' => '1',
         'type' => 'checkbox'
     );
@@ -136,7 +136,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( 'Font Awesome 图标', 'Vertrauen_Setting' ),
         'desc' => __( '是否开启 Font Awesome 图标库', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_ICON',
+        'id' => 'content_icon',
         'std' => '1',
         'type' => 'checkbox'
     );
@@ -144,7 +144,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '思源黑体 CDN', 'Vertrauen_Setting' ),
         'desc' => __( '是否开启 思源黑体 CDN 加载', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_FONT',
+        'id' => 'content_fonts',
         'std' => '1',
         'type' => 'checkbox'
     );
@@ -152,7 +152,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '站点黑白', 'Vertrauen_Setting' ),
         'desc' => __( '是否启用站点黑白功能(一般常用于悼念日)', 'Vertrauen_Setting' ),
-        'id' => 'CONTENT_PRAYER',
+        'id' => 'content_prayer',
         'std' => '0',
         'type' => 'checkbox'
     );

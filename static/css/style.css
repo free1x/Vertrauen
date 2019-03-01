@@ -1,6 +1,7 @@
 *{
     margin: 0;
     list-style: none;
+
 }
 .headerTools{
     padding: 15px 0;
@@ -38,8 +39,10 @@
     background: white;
     box-shadow: 0 2px 3px #d8d8d8;
 }
-.header_logo{
 
+
+.header_home_url:hover{
+    text-decoration: none;
 }
 .header_logo>img{
     width: 50px;
@@ -52,6 +55,7 @@
     line-height: 48px;
     color: #5c5c5c;
 }
+
 .header_nav{
     float: right;
 }

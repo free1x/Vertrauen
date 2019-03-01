@@ -40,13 +40,15 @@
 <header class="container-fluid header">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container header_container">
-            <div class="header_logo">
-                <?php  if (of_get_option( 'content_logo', 'no entry' )){ ?>
-                <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
-                <?php } ?>
-                <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
-                <div class="clearfix"></div>
-            </div>
+            <a href="<?php echo home_url(); ?>" class="header_home_url">
+                <div class="header_logo">
+                    <?php  if (of_get_option( 'content_logo', 'no entry' )){ ?>
+                        <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
+                    <?php } ?>
+                    <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
+                    <div class="clearfix"></div>
+                </div>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

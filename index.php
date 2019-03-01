@@ -17,7 +17,7 @@ get_header(); ?>
 
 		<header class="entry-header">
 			<h1>Options Framework Theme</h1>
-			<p>Use of_get_option($id,$default) to return option values.</p>
+            <p>Use of_get_option($id,$default) to return option values.</p>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">

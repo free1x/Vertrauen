@@ -45,7 +45,7 @@ function optionsframework_custom_scripts() { ?>
  * This is an example of filtering menu parameters
  */
 
-
+add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
 function prefix_options_menu_filter( $menu ) {
 	$menu['mode'] = 'menu';
 	$menu['page_title'] = __( 'Vertrauen 主题设置', 'Vertrauen_Setting');
@@ -54,11 +54,24 @@ function prefix_options_menu_filter( $menu ) {
 	return $menu;
 }
 
-add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
-
 
 add_filter('admin_footer_text', 'Vertrauen_footer_text');
-function Vertrauen_footer_text($text) {
-    $text = '<span id="footer-thankyou">Thanks for using <a href="https://nco.im/">Vertrauen</a> Theme By WordPress.</span>';
-    return $text;
+function Vertrauen_footer_text() {
+    $copy = '<span id="footer-thankyou">Thanks for using <a href="https://nco.im/">Vertrauen</a> Theme By WordPress.</span>';
+    return $copy;
 }
+
+add_filter( 'wp_title', 'Vertrauen_wp_title', 10, 2 );
+function Vertrauen_wp_title( $title, $sep ) {
+    global $paged, $page;
+    if ( is_feed() )
+        return $title;
+    $title .= get_bloginfo( 'name' );
+    $site_description = get_bloginfo( 'description', 'display' );
+    if ( $site_description && ( is_home() || is_front_page() ) )
+        $title = "$title $sep $site_description";
+    if ( $paged >= 2 || $page >= 2 )
+        $title = "$title $sep " . sprintf( __( 'Page %s', 'Vertrauen' ), max( $paged, $page ) );
+    return $title;
+}
+

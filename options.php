@@ -182,6 +182,7 @@ function optionsframework_options() {
         'id' => 'seo_title',
         'placeholder' => 'Vertrauen',
         'class' => 'mini',
+        'std' => 'Vertrauen',
         'type' => 'text'
     );
 
@@ -242,10 +243,26 @@ function optionsframework_options() {
     );
 
     $options[] = array(
-        'name' => __( '推荐展现图', 'theme-Vertrauen_Setting' ),
+        'name' => __( '推荐展现图', 'Vertrauen_Setting' ),
         'desc' => __( '添加一张图在首页展示.', 'theme-textdomain' ),
         'id' => 'banner_content',
         'type' => 'upload'
+    );
+
+    $options[] = array(
+        'name' => __( '推荐文章链接', 'Vertrauen_Setting' ),
+        'desc' => __( '头图推荐链接.', 'Vertrauen_Setting' ),
+        'id' => 'banner_link',
+        'placeholder' => '文章链接',
+        'type' => 'text'
+    );
+
+    $options[] = array(
+        'name' => __( '文章推荐描述', 'Vertrauen_Setting' ),
+        'desc' => __( '填写推荐描述内容.', 'Vertrauen_Setting' ),
+        'id' => 'banner_info',
+        'placeholder' => 'The minimalist design of the front end creates this perfect Vertrauen theme, giving it a unique soul!',
+        'type' => 'textarea'
     );
 
     //页脚设置

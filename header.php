@@ -38,13 +38,35 @@
 <?php } ?>
 
 <header class="container-fluid header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container header_container">
+            <div class="header_logo">
+                <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
+                <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
+                <div class="clearfix"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <div class="header_nav">
+                        <?php
+                        wp_nav_menu( array( 'theme_location' => 'headerNav','顶部辅助栏'  => 'headerNav','container_class'  => 'headerNav', 'fallback_cb' => 'default_menu' ) );
+                        ?>
+                    </div>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
        <div class="container">
-           <div class="header_logo">
-               <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
-               <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
-               <div class="clearfix"></div>
-           </div>
-           <div class="header_nav"></div>
+
+
        </div>
 </header>
 

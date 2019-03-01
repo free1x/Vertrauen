@@ -1,6 +1,6 @@
 *{
     margin: 0;
-
+    list-style: none;
 }
 .headerTools{
     padding: 15px 0;
@@ -24,7 +24,6 @@
 }
 .headerTools-Nav>ul>li{
     float: left;
-    list-style: none;
     padding: 0 20px;
 }
 .headerTools-Nav>ul>li>a{
@@ -32,7 +31,7 @@
     text-decoration: none;
 }
 .header{
-    padding: 20px 0;
+    padding: 10px 0;
     background: white;
 }
 .header_logo{
@@ -48,6 +47,22 @@
     font-weight: 300;
     line-height: 48px;
     color: #5c5c5c;
+}
+.header_nav{
+    float: right;
+}
+.headerNav{
+
+}
+.headerNav>ul>li{
+    float: left;
+    padding: 0 20px;
+}
+.headerNav>ul>li>a{
+    color:grey;
+}
+.header_container{
+    padding: 0;
 }
 @media (min-width: 2100px){
     .container {

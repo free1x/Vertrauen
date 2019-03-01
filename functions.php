@@ -55,3 +55,10 @@ function prefix_options_menu_filter( $menu ) {
 }
 
 add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
+
+
+add_filter('admin_footer_text', 'Vertrauen_footer_text');
+function Vertrauen_footer_text($text) {
+    $text = '<span id="footer-thankyou">Thanks for using <a href="https://nco.im/">Vertrauen</a> Theme By WordPress.</span>';
+    return $text;
+}

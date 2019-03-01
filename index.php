@@ -10,6 +10,9 @@
 
 get_header(); ?>
 
+
+
+
 	<article>
 
 		<header class="entry-header">

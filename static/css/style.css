@@ -37,7 +37,7 @@
 .header{
     padding: 10px 0;
     background: white;
-    box-shadow: 0 2px 3px #d8d8d8;
+    box-shadow: 2px 5px 18px 0 rgba(64, 87, 191, 0.07);
 }
 
 
@@ -110,8 +110,46 @@
     outline: none;
 }
 .banner{
-    background: #d8d8d8;
+    margin-top: 20px;
+    height: 600px;
+    background-size: 100%!important;
+    background-position: 0!important;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 0;
+}
+.banner_content{
+    height: 75%;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+.banner_info{
+    width:500px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    position: relative;
+}
+.banner_info>img{
+    width:100%;
+    height:auto;
+}
+.banner_info>img:hover{
 
+
+}
+.banner_title{
+    position: absolute;
+    color:white;
+    bottom: 0;
+    background: rgba(74, 74, 74, 0.51);
+    width: 100%;
+    padding: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 @media (min-width: 2100px){
     .container {

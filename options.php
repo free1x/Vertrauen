@@ -243,17 +243,24 @@ function optionsframework_options() {
     );
 
     $options[] = array(
+        'name' => __( '推荐背景展现图', 'Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在首页背景展示.', 'Vertrauen_Setting' ),
+        'id' => 'banner_back_content',
+        'type' => 'upload'
+    );
+
+    $options[] = array(
         'name' => __( '推荐展现图', 'Vertrauen_Setting' ),
-        'desc' => __( '添加一张图在首页展示.', 'theme-textdomain' ),
+        'desc' => __( '添加一张图在首页展示.', 'Vertrauen_Setting' ),
         'id' => 'banner_content',
         'type' => 'upload'
     );
 
     $options[] = array(
-        'name' => __( '推荐文章链接', 'Vertrauen_Setting' ),
-        'desc' => __( '头图推荐链接.', 'Vertrauen_Setting' ),
-        'id' => 'banner_link',
-        'placeholder' => '文章链接',
+        'name' => __( '推荐文章ID', 'Vertrauen_Setting' ),
+        'desc' => __( '头图推荐ID.', 'Vertrauen_Setting' ),
+        'id' => 'banner_title',
+        'placeholder' => '文章ID',
         'type' => 'text'
     );
 

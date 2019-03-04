@@ -12,9 +12,15 @@ get_header(); ?>
 
 
 <?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
-<div class="container banner">
-   
+<div class="container-fluid banner" style="background: url('<?php echo of_get_option( 'banner_back_content' ); ?>') no-repeat center;">
+    <div class="container banner_content">
+        <div class="banner_info">
+            <img src="<?php echo of_get_option( 'banner_content' ); ?>" alt="">
+            <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
+        </div>
+    </div>
 </div>
+
 <?php } ?>
 
 	<article>

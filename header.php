@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> <?php if (of_get_option( 'content_prayer', 'no entry' )){echo 'style="FILTER: gray;-webkit-filter: grayscale(100%);"';}  ?>>
     <head>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <?php  $transfer = get_stylesheet_directory_uri().'/static/'; ?>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
             <title><?php wp_title('-','-');?></title>

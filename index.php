@@ -11,10 +11,11 @@
 get_header(); ?>
 
 
-
+<?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
 <div class="container banner">
-    
+   
 </div>
+<?php } ?>
 
 	<article>
 

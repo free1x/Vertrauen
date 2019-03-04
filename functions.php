@@ -80,3 +80,6 @@ register_nav_menus( array(
     'headerNav'    => '顶部导航栏',
     'footerNav'    => '底部导航栏',
 ) );
+
+
+add_theme_support( 'post-thumbnails' );

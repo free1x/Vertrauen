@@ -75,6 +75,10 @@
 .navbar{
     padding: 10px 0;
 }
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
 .form-control{
     background: #fafafb;
     display: block;
@@ -105,8 +109,52 @@
 
     outline: none;
 }
+.banner{
+    background: #d8d8d8;
+
+}
 @media (min-width: 2100px){
     .container {
         max-width: 80%;
     }
+}
+@media (max-width: 991px) {
+    .headerNav>ul>li{
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+    }
+    .headerNav>ul>li{
+
+    }
+    .form-inline .form-control{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form-submit{
+        display: none;
+    }
+    .menu{
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 460px){
+    .container{
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container{
+        max-width: 300px;
+    }
+
 }

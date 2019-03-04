@@ -86,7 +86,6 @@
     box-sizing: border-box;
     padding: .312rem 2.25rem .312rem .625rem;
     width: 100%;
-
     border-radius: .125rem;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -136,10 +135,15 @@
 .banner_info>img{
     width:100%;
     height:auto;
+    transition: .2s;
+    filter: grayscale(40%);
+
 }
 .banner_info>img:hover{
-
-
+    width: 105%;
+    height: auto;
+    transition: .2s;
+    filter: grayscale(0%);
 }
 .banner_title{
     position: absolute;

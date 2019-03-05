@@ -87,8 +87,8 @@ register_nav_menus( array(
 add_theme_support( 'post-thumbnails' );
 
 if ( function_exists( 'add_image_size' ) ){
-    add_image_size( 'category-thumb', 1000, 400 ); // 预置一个名为’category-thumb’,200*200的缩略图大小
-    add_image_size( 'homepage-thumb', 1000, 400); //预置一个名为’homepage-thumb’,220*180的缩略图大小
-    add_image_size( 'search-thumb', 1000, 400); //预置一个名为’homepage-thumb’,220*180的缩略图大小
+    add_image_size( 'category-thumb', 1000, 400 );
+    add_image_size( 'homepage-thumb', 1000, 400);
+    add_image_size( 'search-thumb', 1000, 400);
 }
 

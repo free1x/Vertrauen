@@ -65,7 +65,7 @@
                 </ul>
                 <?php  if (of_get_option( 'content_search', 'no entry' )){ ?>
                 <form class="form-inline my-2 my-lg-0"  method="get" action="<?php echo home_url( '/' ); ?>">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="" name="s" id="s">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" value="" name="s" id="s">
                     <button type="submit" class="form-submit"><i class="fas fa-search"></i></button>
                 </form>
                  <?php } ?>

@@ -228,6 +228,20 @@ function optionsframework_options() {
         )
     );
 
+    $options[] = array(
+        'name' => __( '搜索页面头图', 'Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在搜索页面展示.', 'Vertrauen_Setting' ),
+        'id' => 'search_banner',
+        'type' => 'upload'
+    );
+
+    $options[] = array(
+        'name' => __( '文章默认缩略图', 'Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在列表页面展示.', 'Vertrauen_Setting' ),
+        'id' => 'search_thumb',
+        'type' => 'upload'
+    );
+
     //banner
     $options[] = array(
         'name' => __( '推荐设置', 'Vertrauen_Setting' ),

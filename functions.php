@@ -42,7 +42,7 @@ function optionsframework_custom_scripts() { ?>
 }
 
 /*
- * This is an example of filtering menu parameters
+ * This is an example of filtering menu parameters <a href="". get_permalink($post->ID) . "">阅读更多</a>
  */
 
 add_filter( 'optionsframework_menu', 'prefix_options_menu_filter' );
@@ -66,9 +66,11 @@ function Vertrauen_wp_title( $title, $sep ) {
     global $paged, $page;
     if ( is_feed() )
         return $title;
+    if(is_search())
+        return $title;
     $title .= get_bloginfo( 'name' );
     $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) )
+    if ( $site_description && ( is_home() || is_front_page()) )
         $title = "$title $sep $site_description";
     if ( $paged >= 2 || $page >= 2 )
         $title = "$title $sep " . sprintf( __( 'Page %s', 'Vertrauen' ), max( $paged, $page ) );
@@ -83,3 +85,10 @@ register_nav_menus( array(
 
 
 add_theme_support( 'post-thumbnails' );
+
+if ( function_exists( 'add_image_size' ) ){
+    add_image_size( 'category-thumb', 1000, 400 ); // 预置一个名为’category-thumb’,200*200的缩略图大小
+    add_image_size( 'homepage-thumb', 1000, 400); //预置一个名为’homepage-thumb’,220*180的缩略图大小
+    add_image_size( 'search-thumb', 1000, 400); //预置一个名为’homepage-thumb’,220*180的缩略图大小
+}
+

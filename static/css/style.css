@@ -218,6 +218,9 @@
     font-weight: 300;
     letter-spacing: 1px;
 }
+.search_box{
+    margin: 20px 0;
+}
 .search_meta{
     padding: 10px 15px;
     margin-bottom: 0;

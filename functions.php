@@ -92,3 +92,15 @@ if ( function_exists( 'add_image_size' ) ){
     add_image_size( 'search-thumb', 1000, 400);
 }
 
+
+function Vertrauen_widgets($id){
+	register_sidebar(array(
+		'name' => '侧边栏',
+		'id' => 'sidebar',
+		'before_widget' => '<div class="side-widget">','after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+}
+
+add_action('widgets_init', 'Vertrauen_widgets');

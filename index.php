@@ -13,8 +13,8 @@ get_header(); ?>
 
 <?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
 <div class="container-fluid banner row" style="background: url('<?php echo of_get_option( 'banner_back_content' ); ?>') no-repeat center;">
-    <div class="container banner_content col-6">
-        <div class="banner_info col-5" onclick="location.href='<?php echo get_permalink(of_get_option( 'banner_title' )); ?>'">
+    <div class="container banner_content col-12">
+        <div class="banner_info col-4" onclick="location.href='<?php echo get_permalink(of_get_option( 'banner_title' )); ?>'">
             <img src="<?php echo of_get_option( 'banner_content' ); ?>" alt="">
             <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
         </div>
@@ -23,30 +23,38 @@ get_header(); ?>
 
 <?php } ?>
 
+<div class="container content ">
+   <div class="page_content row">
+       <div class="content_page_list col-8">
+		   <?php
+		   if (have_posts()) :
+			   while (have_posts()) :
+				   ?>
+                   <h2 id="post-<?php the_ID(); ?>">
+                       <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
+						   <?php the_title(); ?><!--文章标题-->
+                       </a>
+                   </h2>
+                   <small>
+					   <?php the_time('F jS, Y') ?><!--日期-->
+                       by <?php the_author() ?><!--作者-->
+                   </small>
+				   <?php
+				   the_post();
+				   the_content();
+			   endwhile;
+		   endif;
+		   ?>
+       </div>
+       <div class="content_sidebar col-4">
+	       <?php if(is_active_sidebar('sidebar')) : ?>
+		       <?php dynamic_sidebar('sidebar'); ?>
+	       <?php endif; ?>
+       </div>
+   </div>
+</div>
 
-<?php
-
-if (have_posts()) :
-	while (have_posts()) :
-        ?>
-        <h2 id="post-<?php the_ID(); ?>">
-            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
-				<?php the_title(); ?><!--文章标题-->
-            </a>
-        </h2>
-        <small>
-			<?php the_time('F jS, Y') ?><!--日期-->
-            by <?php the_author() ?><!--作者-->
-        </small>
-    <?php
-
-
-		the_post();
-		the_content();
-
-	endwhile;
-endif;
-?>
+<?php get_footer() ?>
 	<article>
 
 		<header class="entry-header">

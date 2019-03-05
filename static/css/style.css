@@ -130,10 +130,10 @@
 .banner_content{
     height: 75%;
     padding: 0;
-    background: rgba(255, 255, 255, 0.9);
+
 }
 .banner_info{
-    width:500px;
+    padding: 0;
     height:100%;
     display:flex;
     align-items:center;

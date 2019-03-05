@@ -41,7 +41,7 @@
 
 <header class="container-fluid header">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container header_container">
+        <div class="container header_container ">
             <a href="<?php echo home_url(); ?>" class="header_home_url">
                 <div class="header_logo">
                     <?php  if (of_get_option( 'content_logo', 'no entry' )){ ?>

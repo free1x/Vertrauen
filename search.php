@@ -20,6 +20,7 @@
                         <p class="search_meta">
                             <i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?>
                             <i class="fas fa-user"></i> <?php the_author_posts_link(); ?>
+
                             <i class="fas fa-comments"></i><a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
                             <a class="search_more" href="<?php echo get_permalink( $post_id ); ?>">阅读全文<i class="fas fa-arrow-right"></i></a>
                         </p>

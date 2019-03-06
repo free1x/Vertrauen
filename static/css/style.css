@@ -3,6 +3,9 @@
     list-style: none;
 
 }
+html{
+    margin: 0!important;
+}
 .headerTools{
     padding: 15px 0;
     background: black;
@@ -249,6 +252,7 @@
     background: white;
     box-shadow: 0 2px 5px #d8d8d8;
     margin: 20px 0;
+    height: 288px   ;
 }
 .content_page_list{
     padding: 0;
@@ -256,7 +260,7 @@
 
 .post_list_screen{
     float: left;
-    height: 300px;
+    height: 100%;
     position: relative;
     display: flex;
     align-items: center;
@@ -280,6 +284,26 @@
 }
 .post_list_content{
     float: right;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+.post_list_content>h2{
+    line-height: 1.6;
+    font-size: 1.25rem;
+
+}
+.post_list_content>h2>a{
+    color:black;
+}
+.post_list_content_text{
+    color: #404b69 !important;
+    font-weight: 300;
+}
+.post_list_content>small{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
 }
 @media (min-width: 2100px){
     .container {

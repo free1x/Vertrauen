@@ -14,7 +14,6 @@
                     }else{
                         echo "<img src='".of_get_option("search_thumb")."' alt>";
                     };?>
-
                     <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></a>
                      <div class="search_page">
                         <p class="search_meta">

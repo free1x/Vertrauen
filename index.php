@@ -45,17 +45,15 @@ get_header(); ?>
                         </div>
                         <div class="post_list_content col-7">
                             <h2 id="post-<?php the_ID(); ?>">
-                                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">
-				                    <?php the_title(); ?><!--文章标题-->
-                                </a>
+                                <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></a>
                             </h2>
+                            <div class="post_list_content_text">
+	                            <?php echo wp_trim_words(get_the_content(), 130, '...'); ?>
+                            </div>
                             <small>
-			                    <?php the_time('F jS, Y') ?><!--日期-->
-                                by <?php the_author() ?><!--作者-->
+                                <span><i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?></span>
+                                <span><i class="fas fa-comments"></i><a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></span>
                             </small>
-		                    <?php
-		                    the_content();
-		                    ?>
                         </div>
                         <div class="clearfix"></div>
                     </div>

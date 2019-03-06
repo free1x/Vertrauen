@@ -6,14 +6,33 @@
                 <span></span>
                 <p><?php echo of_get_option('footer_content','请设置内容')?></p>
                 <div class="footer_ico">
-                    <a href=""><i class="fab fa-weixin"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href="#"  data-toggle="modal" data-target="#exampleModal"><i class="fab fa-weixin"></i></a>
+                    <a href="<?php echo of_get_option('footer_github','请填写内容')?>" target="_blank"><i class="fab fa-github"></i></a>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">微信二维码</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="<?php echo of_get_option('footer_wechat','') ?>" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-4 footer_link">
+            <div class="col-4 footer_nav">
 
             </div>
-            <div class="col-4">25</div>
+            <div class="col-4"></div>
         </div>
         <div class="footer_copy">
             <div class="copy_content"><?php echo of_get_option('footer_copy','请填写内容')?></div>

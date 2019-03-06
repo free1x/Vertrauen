@@ -67,9 +67,7 @@ get_header(); ?>
 	       <?php  Vertrauen_page()?>
        </div>
        <div class="content_sidebar col-4">
-	       <?php if(is_active_sidebar('sidebar')) : ?>
-		       <?php dynamic_sidebar('sidebar'); ?>
-	       <?php endif; ?>
+            <?php get_sidebar() ?>
        </div>
    </div>
 </div>

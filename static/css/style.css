@@ -6,6 +6,9 @@
 html{
     margin: 0!important;
 }
+body{
+    background-color: #eef3f9;
+}
 .headerTools{
     padding: 15px 0;
     background: black;
@@ -250,7 +253,7 @@ html{
 }
 .page_content_list{
     background: white;
-    box-shadow: 0 2px 5px #d8d8d8;
+
     margin: 20px 0;
     height: 288px   ;
 }
@@ -271,14 +274,16 @@ html{
 .post_list_screen>img{
     width: 100%;
     height: auto;
+
 }
 .post_list_screen>span{
     position: absolute;
-    top:30px;
-    left: 30px;
+    top:20px;
+    left: 20px;
     color: #fff;
     background-color: rgba(39, 49, 73, .33);
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 300;
     padding: 0.25rem 0.325rem;
 
 }
@@ -290,20 +295,67 @@ html{
 }
 .post_list_content>h2{
     line-height: 1.6;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
 
 }
 .post_list_content>h2>a{
     color:black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .post_list_content_text{
     color: #404b69 !important;
     font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .post_list_content>small{
     width: 100%;
     position: absolute;
     bottom: 20px;
+    color: #404b69 !important;
+}
+.post_list_content>small>span>i{
+    padding: 0 5px;
+}
+.post_list_content>small>span>a{
+    color: #404b69 !important;
+    text-decoration: none;
+}
+.post_list_content>small>span:last-child{
+    position: absolute;
+    right: 50px;
+    color: #404b69 !important;
+}
+.paging{
+    width: 100%;
+    position: relative;
+    margin: 40px 0;
+}
+.paging>a{
+    background: #ffffff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color:gray;
+}
+.paging>a:last-child{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    margin: 0;
+}
+.content_sidebar{
+    margin: 20px 0;
+}
+.side-widget{
+    background: white;
+    padding: 20px;
 }
 @media (min-width: 2100px){
     .container {

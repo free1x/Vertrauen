@@ -362,6 +362,16 @@ function optionsframework_options() {
 		'placeholder' => '',
 		'type' => 'text'
 	);
+
+	$options[] = array(
+		'name' => __( '底部自定义菜单名称', 'Vertrauen_Setting' ),
+		'desc' => __( '底部菜单名称', 'Vertrauen_Setting' ),
+		'id' => 'footer_nav',
+		'placeholder' => '菜单名称',
+		'class' => 'mini',
+		'std' => '',
+		'type' => 'text'
+	);
     //结束
 
     $options[] = array(

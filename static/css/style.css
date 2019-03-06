@@ -427,6 +427,16 @@ body{
     width: 50%;
     padding: 20px 10px;
 }
+.footer_nav{
+    padding-left: 20px!important;
+}
+.footerNav>ul>li{
+   list-style: circle;
+}
+.footer_nav>h4{
+    font-weight: 300;
+    font-size: 18px;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;

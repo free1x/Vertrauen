@@ -30,9 +30,11 @@
                 </div>
             </div>
             <div class="col-4 footer_nav">
-
+                <h4><?php echo of_get_option('footer_nav','请设置名称')?></h4>
+	            <?php
+	            wp_nav_menu( array( 'theme_location' => 'footerNav','顶部辅助栏'  => 'footerNav','container_class'  => 'footerNav', 'fallback_cb' => 'default_menu' ) );
+	            ?>
             </div>
-            <div class="col-4"></div>
         </div>
         <div class="footer_copy">
             <div class="copy_content"><?php echo of_get_option('footer_copy','请填写内容')?></div>

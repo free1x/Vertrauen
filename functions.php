@@ -168,3 +168,6 @@ function Vertrauen_page( $range = 4 ) {
 		echo "</div>\n";
 	}
 }
+
+
+add_filter( 'pre_option_link_manager_enabled', '__return_true' );

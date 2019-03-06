@@ -360,6 +360,56 @@ body{
 .row{
     margin: 0;
 }
+.footer{
+    background: black;
+}
+.footer_content{
+    color:white;
+    padding: 30px 0;
+}
+.footer_content>.col-4{
+    padding: 0;
+}
+.footer_info>h4{
+    font-weight: 300;
+    font-size: 18px;
+}
+.footer_info>span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 15px 0;
+}
+.footer_info>p{
+    font-size: 14px;
+    color: #d1d1d1;
+}
+.footer_copy{
+    color:white;
+    font-weight: 200;
+    font-size: 14px;
+    padding:20px 0 30px;
+    border-top: 1px solid #3f3f3f;
+}
+.footer_ico>a{
+    color:white;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.copy_content{
+    float: left;
+}
+.copy_right{
+    float: right;
+}
+.footer_link{
+    padding-left: 20px!important;
+}
+.footer_link>h2{
+    font-weight: 300;
+    font-size: 18px;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;

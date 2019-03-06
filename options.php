@@ -283,7 +283,7 @@ function optionsframework_options() {
     );
 
     $options[] = array(
-        'name' => __( '推荐文章ID', 'Vertrauen_Setting' ),
+        'name' => __( '推荐主文章ID', 'Vertrauen_Setting' ),
         'desc' => __( '头图推荐ID.', 'Vertrauen_Setting' ),
         'id' => 'banner_title',
         'placeholder' => '文章ID',
@@ -298,6 +298,14 @@ function optionsframework_options() {
         'type' => 'textarea'
     );
 
+	$options[] = array(
+		'name' => __( '推荐分类ID', 'Vertrauen_Setting' ),
+		'desc' => __( '分类ID.', 'Vertrauen_Setting' ),
+		'id' => 'banner_id',
+		'placeholder' => '分类ID',
+		'type' => 'text'
+	);
+
     //页脚设置
     $options[] = array(
         'name' => __( '页脚设置', 'Vertrauen_Setting' ),
@@ -306,6 +314,54 @@ function optionsframework_options() {
 
 
 
+	$options[] = array(
+		'name' => __( '页脚内容介绍标题', 'Vertrauen_Setting' ),
+		'desc' => __( '介绍标题', 'Vertrauen_Setting' ),
+		'id' => 'footer_title',
+		'placeholder' => '标题',
+		'class' => 'mini',
+		'std' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( '页脚主内容', 'Vertrauen_Setting' ),
+		'desc' => __( '填写页脚主内容.', 'Vertrauen_Setting' ),
+		'id' => 'footer_content',
+		'placeholder' => '页脚内容介绍',
+		'type' => 'textarea'
+	);
+
+	$options[] = array(
+		'name' => __( '微信二维码', 'Vertrauen_Setting' ),
+		'desc' => __( '微信公众号或者个人微信二维码', 'Vertrauen_Setting' ),
+		'id' => 'footer_wechat',
+		'placeholder' => '',
+		'type' => 'upload'
+	);
+
+	$options[] = array(
+		'name' => __( 'Github 链接', 'Vertrauen_Setting' ),
+		'desc' => __( 'Github 项目或者个人主页链接', 'Vertrauen_Setting' ),
+		'id' => 'footer_github',
+		'placeholder' => '',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'name' => __( '底部自定义版权', 'Vertrauen_Setting' ),
+		'desc' => __( '填写底部自定义版权内容', 'Vertrauen_Setting' ),
+		'id' => 'footer_copy',
+		'placeholder' => '',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'name' => __( 'ICP备案号', 'Vertrauen_Setting' ),
+		'desc' => __( '填写底部ICP备案号内容', 'Vertrauen_Setting' ),
+		'id' => 'footer_record',
+		'placeholder' => '',
+		'type' => 'text'
+	);
     //结束
 
     $options[] = array(

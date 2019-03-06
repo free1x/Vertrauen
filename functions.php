@@ -108,7 +108,7 @@ add_action('widgets_init', 'Vertrauen_widgets');
 
 function custom_posts_per_page($query){
 	if(is_home()){
-		$query->set('posts_per_page',4);//首页每页显示8篇文章
+		$query->set('posts_per_page', of_get_option( 'page_list_num', '4' ));//首页每页显示8篇文章
 	}
 	if(is_search()){
 		$query->set('posts_per_page',-1);//搜索页显示所有匹配的文章，不分页

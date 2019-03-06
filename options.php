@@ -228,6 +228,16 @@ function optionsframework_options() {
         )
     );
 
+	$options[] = array(
+		'name' => __( '首页文章展示数', 'Vertrauen_Setting' ),
+		'desc' => __( '文章展示数', 'Vertrauen_Setting' ),
+		'id' => 'page_list_num',
+		'placeholder' => '4',
+		'class' => 'mini',
+		'std' => '5',
+		'type' => 'text'
+	);
+
     $options[] = array(
         'name' => __( '搜索页面头图', 'Vertrauen_Setting' ),
         'desc' => __( '添加一张图在搜索页面展示.', 'Vertrauen_Setting' ),
@@ -241,6 +251,8 @@ function optionsframework_options() {
         'id' => 'search_thumb',
         'type' => 'upload'
     );
+
+
 
     //banner
     $options[] = array(

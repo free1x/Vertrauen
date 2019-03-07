@@ -421,6 +421,9 @@ body{
 .modal-title ,.modal-content ,.modal-body{
     color:black;
 }
+.modal-content{
+    border-radius: 0;
+}
 .modal-body>img{
     display: block;
     margin: 0 auto;
@@ -431,11 +434,24 @@ body{
     padding-left: 20px!important;
 }
 .footerNav>ul>li{
-   list-style: circle;
+    list-style: disc;
+    line-height: 16px;
+    padding-bottom: 11px;
+}
+.footerNav>ul>li>a{
+    color:white;
+    font-size: 14px;
 }
 .footer_nav>h4{
     font-weight: 300;
     font-size: 18px;
+}
+.footer_nav>span{
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: white;
+    margin: 15px 0;
 }
 @media (min-width: 1200px) {
     .container {

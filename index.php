@@ -23,7 +23,7 @@ get_header(); ?>
 
 <?php } ?>
 
-<div class="container content ">
+<div class="container content" id="content">
    <div class="post_content row">
        <div class="content_page_list col-7">
 		   <?php

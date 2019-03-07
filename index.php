@@ -13,10 +13,37 @@ get_header(); ?>
 
 <?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
 <div class="container-fluid banner row" style="background: url('<?php echo of_get_option( 'banner_back_content' ); ?>') no-repeat center;">
-    <div class="container banner_content ">
+    <div class="container banner_content row">
         <div class="banner_info col-4" onclick="location.href='<?php echo get_permalink(of_get_option( 'banner_title' )); ?>'">
             <img src="<?php echo of_get_option( 'banner_content' ); ?>" alt="">
             <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
+        </div>
+
+        <div class="banner_content col-8">
+            <ul class="row">
+		        <?php
+		        $singleUrl = get_permalink($post_id);
+		        $cats = wp_get_post_categories($post->ID);
+		        if ($cats) {
+			        $args = array(
+				        'category__in' => array( $cats[0] ),
+				        'showposts' => 4,
+				        'caller_get_posts' => 1
+			        );
+			        query_posts($args);
+			        if (have_posts()) :
+				        while (have_posts()) : the_post(); update_post_caches($posts); ?>
+                            <li<?php if(get_permalink($post_id)==$singleUrl){?> <?php }?> class="col-6 banner_content_info">
+	                            <?php if ( has_post_thumbnail() ) {
+		                            echo "<img src='".get_the_post_thumbnail_url( $post_id )."'>";
+	                            }else{
+		                            echo "<img src='".of_get_option("search_thumb")."' alt>";
+	                            };?>
+                              <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+                            </li>
+				        <?php endwhile; else : ?>
+                        <li> 暂无文章</li>
+			        <?php endif; wp_reset_query(); } ?>                                                        </ul>
         </div>
     </div>
 </div>
@@ -66,7 +93,7 @@ get_header(); ?>
 		   ?>
 	       <?php  Vertrauen_page()?>
        </div>
-       <div class="content_sidebar col-4">
+       <div class="content_sidebar col-5">
             <?php get_sidebar() ?>
        </div>
    </div>

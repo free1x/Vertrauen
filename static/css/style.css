@@ -135,6 +135,7 @@ body{
 }
 .banner_content{
     height: 75%;
+    padding: 0;
 }
 .banner_info{
     padding: 0;
@@ -246,7 +247,7 @@ body{
     padding: 0 5px;
 }
 .content{
-
+    padding: 0;
 }
 .post_content{
 
@@ -452,6 +453,25 @@ body{
     height: 2px;
     background: white;
     margin: 15px 0;
+}
+.banner_content_info{
+    width: 100%;
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 48px;
+    padding: 0;
+
+}
+.banner_content_info>img{
+    width: 100%;
+    position: absolute;
+    height: auto;
+
 }
 @media (min-width: 1200px) {
     .container {

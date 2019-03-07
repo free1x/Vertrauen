@@ -439,8 +439,8 @@ body{
     padding-bottom: 11px;
 }
 .footerNav>ul>li>a{
-    color:white;
     font-size: 14px;
+    color: #d1d1d1;
 }
 .footer_nav>h4{
     font-weight: 300;

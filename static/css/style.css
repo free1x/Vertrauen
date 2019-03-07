@@ -125,7 +125,7 @@ body{
 }
 .banner{
     margin-top: 20px;
-    height: 600px;
+    height: 700px;
     background-size: 100%!important;
     background-position: 0!important;
     display:flex;
@@ -457,14 +457,15 @@ body{
 .banner_content_info{
     width: 100%;
     position: relative;
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-    margin-bottom: 48px;
+    margin-bottom: 33px;
     padding: 0;
+    border: 10px solid rgba(255, 255, 255, 0);
 
 }
 .banner_content_info>img{

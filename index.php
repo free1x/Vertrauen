@@ -23,12 +23,16 @@ get_header(); ?>
             <ul class="row">
 		        <?php
 		        $singleUrl = get_permalink($post_id);
+
 		        $cats = wp_get_post_categories($post->ID);
+
 		        if ($cats) {
+
 			        $args = array(
-				        'category__in' => array( $cats[0] ),
+				        'category__in' => array(of_get_option('banner_id','0')),
 				        'showposts' => 4,
-				        'caller_get_posts' => 1
+				        'caller_get_posts' => 1,
+
 			        );
 			        query_posts($args);
 			        if (have_posts()) :
@@ -42,7 +46,7 @@ get_header(); ?>
                               <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                             </li>
 				        <?php endwhile; else : ?>
-                        <li> 暂无文章</li>
+                        <li class="banner_notice"> 当前分类下暂无文章</li>
 			        <?php endif; wp_reset_query(); } ?>                                                        </ul>
         </div>
     </div>

@@ -290,13 +290,6 @@ function optionsframework_options() {
         'type' => 'text'
     );
 
-    $options[] = array(
-        'name' => __( '文章推荐描述', 'Vertrauen_Setting' ),
-        'desc' => __( '填写推荐描述内容.', 'Vertrauen_Setting' ),
-        'id' => 'banner_info',
-        'placeholder' => 'The minimalist design of the front end creates this perfect Vertrauen theme, giving it a unique soul!',
-        'type' => 'textarea'
-    );
 
 	$options[] = array(
 		'name' => __( '推荐分类ID', 'Vertrauen_Setting' ),

@@ -196,4 +196,4 @@ function my_unregister_widgets() {
 
 }
 
-include_once get_stylesheet_directory() . '/inc/search.php';
+include_once get_stylesheet_directory() . '/inc/weigets/search.php';

@@ -359,15 +359,16 @@ body{
 }
 .side-widget{
     background: white;
-    padding: 20px;
     margin-bottom: 20px;
+    overflow: auto;
 }
 .side-widget>h3{
-    font-size: 20px;
-    border-bottom: 1px solid #d4d4d4;
-    padding-bottom: 14px;
+    font-size: 18px;
     font-weight: 400;
+    padding: 14px;
+    background: #f9f9f9;
 }
+
 
 .row{
     margin: 0;
@@ -514,6 +515,12 @@ body{
 }
 .banner_content_main{
     padding: 0;
+}
+.side-widget>ul{
+    padding: 0;
+}
+.side-widget>ul>li{
+    float: left;
 }
 @media (min-width: 1200px) {
     .container {

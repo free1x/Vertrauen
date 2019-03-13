@@ -458,15 +458,15 @@ body{
     width: 100%;
     position: relative;
     height: 250px;
-    display: flex;
+
     align-items: center;
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-    margin-bottom: 33px;
-    padding: 0;
-    border: 10px solid rgba(255, 255, 255, 0);
+    margin-bottom: 23px;
 
+    padding: 0 15px;
+    display: block;
 }
 .banner_content_info>img{
     width: 100%;
@@ -521,12 +521,18 @@ body{
     .post_list_content{
         height: 230px;
     }
-    .banner_info{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+
     .banner{
-        height: 500px;
+        height: 566px;
+    }
+    .banner_info{
+
+    }
+    .banner_content_main{
+
+    }
+    .banner_content_info{
+        height: 200px;
     }
 }
 @media (max-width: 1200px) {
@@ -540,6 +546,25 @@ body{
     }
     .banner{
         height: 400px;
+    }
+    .banner_content_info {
+        height: 138px;
+    }
+    .banner_content_info>a {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        bottom: 0;
+        background: rgba(74, 74, 74, 0.51);
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: white;
+        padding: 10px 9px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 14px;
+        text-decoration: none;
     }
 }
 @media (min-width: 1600px) {
@@ -585,6 +610,9 @@ body{
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
+    }
+    .banner_content_main{
+        display: none;
     }
 }
 

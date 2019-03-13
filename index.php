@@ -19,7 +19,7 @@ get_header(); ?>
             <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
         </div>
 
-        <div class="banner_content col-8">
+        <div class="banner_content_main col-8">
             <ul class="row">
 		        <?php
 		        $singleUrl = get_permalink($post_id);
@@ -37,7 +37,7 @@ get_header(); ?>
 			        query_posts($args);
 			        if (have_posts()) :
 				        while (have_posts()) : the_post(); update_post_caches($posts); ?>
-                            <li<?php if(get_permalink($post_id)==$singleUrl){?> <?php }?> class="col-6 banner_content_info">
+                            <li<?php if(get_permalink($post_id)==$singleUrl){?> <?php }?> class="col-6 banner_content_info" onclick="location.href='<?php echo get_permalink(); ?>'">
 	                            <?php if ( has_post_thumbnail() ) {
 		                            echo "<img src='".get_the_post_thumbnail_url( $post_id )."'>";
 	                            }else{

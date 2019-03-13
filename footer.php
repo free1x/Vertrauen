@@ -1,5 +1,5 @@
-<footer class="container-fluid footer">
-    <div class="container">
+<footer class="container-fluid footer ">
+    <div class="container p-0">
         <div class="footer_content row">
             <div class="col-4 footer_info">
                 <h4><?php echo of_get_option('footer_title','请设置内容') ?></h4>

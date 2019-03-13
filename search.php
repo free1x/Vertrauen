@@ -3,7 +3,7 @@
 <div class="search_header" style="background: url('<?php echo of_get_option( 'search_banner' ); ?>') no-repeat center;">
     <h1><?php wp_title( '#'); ?></h1>
 </div>
-<div class="container search_content" role="main">
+<div class="container search_content p-0" role="main">
     <div class="row">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="col-sm-4 search_box">

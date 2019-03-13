@@ -195,3 +195,5 @@ function my_unregister_widgets() {
 	unregister_widget( 'WP_Widget_Custom_HTML' );
 
 }
+
+include_once get_stylesheet_directory() . '/inc/search.php';

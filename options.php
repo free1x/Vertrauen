@@ -113,7 +113,7 @@ function optionsframework_options() {
         'name' => __( '站点配色', 'Vertrauen_Setting' ),
         'desc' => __( '站点头部颜色', 'Vertrauen_Setting' ),
         'id' => 'content_color',
-        'std' => 'White',
+        'std' => '#eef3f9',
         'type' => 'color',
     );
 

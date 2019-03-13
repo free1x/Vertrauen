@@ -56,7 +56,7 @@ get_header(); ?>
 
 <div class="container content" id="content">
    <div class="post_content row">
-       <div class="content_page_list col-7 <?php if(of_get_option( 'page_layout') == true){echo 'col-fixed';} ?>">
+       <div class="content_page_list col-8 <?php if(of_get_option( 'page_layout') == true){echo 'col-fixed';} ?>">
 		   <?php
 		   if (have_posts()) :
 			   while (have_posts()) :
@@ -79,7 +79,7 @@ get_header(); ?>
                                 <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></a>
                             </h2>
                             <div class="post_list_content_text <?php if(of_get_option( 'page_layout') == true){echo 'post_list_text_num';}else{echo '';} ?>">
-                                <?php if(of_get_option( 'page_layout') == true){$textNum = 350;}else{$textNum = 130;} ?>
+                                <?php if(of_get_option( 'page_layout') == true){$textNum = 350;}else{$textNum = 200;} ?>
 	                            <?php echo wp_trim_words(get_the_content(), $textNum, '...'); ?>
                             </div>
                             <small>
@@ -98,7 +98,7 @@ get_header(); ?>
 		   ?>
 	       <?php  Vertrauen_page()?>
        </div>
-       <div class="content_sidebar col-5 <?php if(of_get_option( 'page_layout') == true){echo 'd-none';} ?>">
+       <div class="content_sidebar col-4 <?php if(of_get_option( 'page_layout') == true){echo 'd-none';} ?>">
             <?php get_sidebar() ?>
        </div>
    </div>

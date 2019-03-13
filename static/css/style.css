@@ -372,8 +372,31 @@ body{
     font-weight: 400;
     padding: 14px;
     background: #f9f9f9;
+    margin-bottom: 0;
 }
-
+.tagcloud{
+    padding: 15px 12px;
+}
+.tagcloud>a{
+    font-weight: 300    ;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px!important;
+    text-decoration: none;
+    border: .0625rem solid #e5e5e5;
+    background-color: #fafafa;
+    color: #767676;
+    transition: .3s;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.tagcloud>a:hover{
+    transition: .3s;
+    border-color: #0092ee;
+    color: #0092ee;
+}
 
 .row{
     margin: 0;
@@ -526,6 +549,28 @@ body{
 }
 .side-widget>ul>li{
     float: left;
+}
+.search_form_content{
+    text-align: center;
+    position: relative;
+}
+.search_form_content>input{
+    width: 100%;
+    outline: none;
+    height: 50px;
+    border: none;
+    text-indent: 1rem;
+    font-size: 13px;
+    font-weight: 300;
+}
+.search_form_content>button{
+    border: none;
+    background: none;
+    position: absolute;
+    right: 13px;
+    top:13px;
+    font-size: 15px;
+    color:grey;
 }
 @media (min-width: 1200px) {
     .container {

@@ -14,12 +14,12 @@ get_header(); ?>
 <?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
 <div class="container-fluid banner row" style="background: url('<?php echo of_get_option( 'banner_back_content' ); ?>') no-repeat center;">
     <div class="container banner_content row">
-        <div class="banner_info col-4" onclick="location.href='<?php echo get_permalink(of_get_option( 'banner_title' )); ?>'">
+        <div class="banner_info col-5" onclick="location.href='<?php echo get_permalink(of_get_option( 'banner_title' )); ?>'">
             <img src="<?php echo of_get_option( 'banner_content' ); ?>" alt="">
             <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
         </div>
 
-        <div class="banner_content_main col-8">
+        <div class="banner_content_main col-7">
             <ul class="row">
 		        <?php
 		        $singleUrl = get_permalink($post_id);

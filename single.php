@@ -1,7 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: naco
- * Date: 2019-03-06
- * Time: 15:02
- */
+<?php get_header(); ?>
+
+<?php get_footer() ?>
+

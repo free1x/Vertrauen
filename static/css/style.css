@@ -760,6 +760,11 @@ body{
     .search_screen{
         height: 350px;
     }
+    .footer_content>.col-4{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media (max-width:768px){
@@ -776,6 +781,19 @@ body{
     .search_screen{
         height: 300px;
     }
+    .footer_content>.col-4{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer_nav{
+        padding-left: 0!important;
+    }
+    .footerNav{
+        padding-left: 18px!important;
+    }
+
 }
 @media (max-width: 600px){
     .container{
@@ -812,6 +830,7 @@ body{
     .search_more{
         display: none;
     }
+
 }
 
 @media (max-width: 360px) {

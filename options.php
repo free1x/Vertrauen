@@ -219,12 +219,12 @@ function optionsframework_options() {
     $options[] = array(
         'name' => "页面布局设置",
         'desc' => "页面布局供你选择展开式和分栏布局.",
-        'id' => "PAGE_LAYOUT",
-        'std' => "1col-fixed",
+        'id' => "page_layout",
+        'std' => "true",
         'type' => "images",
         'options' => array(
-            '1col-fixed' => $imagepath . '1col.png',
-            '2c-r-fixed' => $imagepath . '2cr.png'
+            true => $imagepath . '1col.png',
+            false => $imagepath . '2cr.png'
         )
     );
 

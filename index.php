@@ -56,15 +56,15 @@ get_header(); ?>
 
 <div class="container content" id="content">
    <div class="post_content row">
-       <div class="content_page_list col-7">
+       <div class="content_page_list col-7 <?php if(of_get_option( 'page_layout') == true){echo 'col-fixed';} ?>">
 		   <?php
 		   if (have_posts()) :
 			   while (have_posts()) :
 				   the_post();
 
 		   ?>
-                    <div class="page_content_list">
-                        <div class="post_list_screen col-5">
+                    <div class="page_content_list <?php if(of_get_option( 'page_layout') == true){echo 'page_content_max';}else{echo '';} ?>">
+                        <div class="post_list_screen <?php if(of_get_option( 'page_layout') == true){echo 'col-4';}else{echo 'col-5';} ?>">
 		                    <?php
 		                    if ( has_post_thumbnail() ) {
 			                    echo "<img src='".get_the_post_thumbnail_url( $post_id )."'>";
@@ -74,12 +74,13 @@ get_header(); ?>
 		                    ?>
                             <span><?php $the_post_category = get_the_category(get_the_ID()); echo $the_post_category[0]->cat_name; ?></span>
                         </div>
-                        <div class="post_list_content col-7">
+                        <div class="post_list_content <?php if(of_get_option( 'page_layout') == true){echo 'col-8';}else{echo 'col-7';} ?>">
                             <h2 id="post-<?php the_ID(); ?>">
                                 <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 30, '...'); ?></a>
                             </h2>
-                            <div class="post_list_content_text">
-	                            <?php echo wp_trim_words(get_the_content(), 130, '...'); ?>
+                            <div class="post_list_content_text <?php if(of_get_option( 'page_layout') == true){echo 'post_list_text_num';}else{echo '';} ?>">
+                                <?php if(of_get_option( 'page_layout') == true){$textNum = 350;}else{$textNum = 130;} ?>
+	                            <?php echo wp_trim_words(get_the_content(), $textNum, '...'); ?>
                             </div>
                             <small>
                                 <span><i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?></span>
@@ -97,7 +98,7 @@ get_header(); ?>
 		   ?>
 	       <?php  Vertrauen_page()?>
        </div>
-       <div class="content_sidebar col-5">
+       <div class="content_sidebar col-5 <?php if(of_get_option( 'page_layout') == true){echo 'd-none';} ?>">
             <?php get_sidebar() ?>
        </div>
    </div>

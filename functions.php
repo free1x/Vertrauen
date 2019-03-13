@@ -187,7 +187,7 @@ function my_unregister_widgets() {
 	unregister_widget( 'WP_Widget_Search' );
 	unregister_widget( 'WP_Widget_Text' );
 	unregister_widget( 'WP_Widget_Categories' );
-	unregister_widget( 'WP_Widget_Recent_Posts' );
+
 	unregister_widget( 'WP_Widget_Recent_Comments' );
 	unregister_widget( 'WP_Widget_RSS' );
 	unregister_widget( 'WP_Nav_Menu_Widget' );

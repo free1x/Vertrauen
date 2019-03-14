@@ -61,10 +61,6 @@ function Vertrauen_footer_text() {
     return $copy;
 }
 
-add_filter( 'wp_title', 'Vertrauen_wp_title', 10, 2 );
-function Vertrauen_wp_title( $title, $sep ) {
-
-}
 
 register_nav_menus( array(
     'headerTools'    => '顶部辅助栏',
@@ -176,7 +172,6 @@ function my_unregister_widgets() {
 	unregister_widget( 'WP_Widget_Search' );
 	unregister_widget( 'WP_Widget_Text' );
 	unregister_widget( 'WP_Widget_Categories' );
-
 	unregister_widget( 'WP_Widget_Recent_Comments' );
 	unregister_widget( 'WP_Widget_RSS' );
 	unregister_widget( 'WP_Nav_Menu_Widget' );

@@ -186,10 +186,18 @@ function optionsframework_options() {
         'type' => 'text'
     );
 
+	$options[] = array(
+		'name' => __( '副标题设置', 'Vertrauen_Setting' ),
+		'desc' => __( '请填写网站副标题', 'Vertrauen_Setting' ),
+		'id' => 'seo_site_description',
+		'placeholder' => '副标题',
+		'type' => 'text'
+	);
+
     $options[] = array(
         'name' => __( '关键字设置', 'Vertrauen_Setting' ),
         'desc' => __( '请用,区分间隔符', 'Vertrauen_Setting' ),
-        'id' => 'SEO_KEYWORD',
+        'id' => 'seo_keyword',
         'placeholder' => 'Vertrauen,主题,极简',
         'type' => 'text'
     );
@@ -197,7 +205,7 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '站点描述', 'Vertrauen_Setting' ),
         'desc' => __( '站点描述', 'Vertrauen_Setting' ),
-        'id' => 'SEO_DES',
+        'id' => 'seo_des',
         'placeholder' => '前端的简约设计营造出完美的Vertrauen主题，赋予其独特的灵魂！',
         'type' => 'textarea'
     );

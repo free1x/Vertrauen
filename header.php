@@ -5,7 +5,29 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <?php  $transfer = get_stylesheet_directory_uri().'/static/'; ?>
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
-        <title><?php wp_title('-','-');?></title>
+
+        <title><?php
+		    if(is_home() && !is_paged()){
+	        if (of_get_option( 'seo_title') || of_get_option('seo_site_description')){
+	            $title = of_get_option('seo_title')." - ".of_get_option('seo_site_description');
+            }else
+		        $title=get_bloginfo("name")." - ".get_bloginfo("description");
+		    }else {
+		        $title=wp_title("-",true,"right");echo get_bloginfo("name").' - ';bloginfo("description");
+		    }
+	        if( $paged < 2){
+		        echo $title;
+	        }else{
+			    echo "$title &#8211; 第 $paged 页";
+	        }
+		    ?></title>
+	    <?php if ( is_home() ) { ?>
+            <meta name="keywords" content="<?php echo of_get_option('seo_keyword')?>" />
+            <meta name="description" content="<?php echo of_get_option('seo_des')?>" />
+	    <?php } elseif(is_category() || is_tag() ) { ?>
+            <meta name="keywords" content="<?php echo of_get_option('seo_keyword')?>" />
+            <meta name="description" content="<?php echo strip_tags(category_description());?>" />
+	    <?php } ?>
         <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php echo $transfer.'/css/bootstrap.min.css' ?>" type="text/css">

@@ -600,6 +600,102 @@ body{
     width: 100%;
     padding: 10px 0;
 }
+.friends>.row{
+    margin: 20px 0;
+}
+.friend_card{
+
+    display: block;
+    padding: 0 7px;
+
+
+}
+.friend_card>a{
+
+    background: #f5f5f5;
+
+    color:black;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    margin: 18px 0;
+    transition: .3s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.02);
+}
+.friend_card>a>span{
+    display: block;
+    padding: 20px;
+}
+.friend_card>a:hover{
+    transition: .8s;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+}
+.page-links .main div:nth-child(5n+1) .card-header {
+    background-color: #3498db;
+}
+.friends>.row>.friend_card:nth-child(5n+1)>a>span:first-child{
+    background: #008eff;
+}
+.friends>.row>.friend_card:nth-child(5n+1)>a>span:nth-child(2){
+    background: #008eff;
+}
+.friends>.row>.friend_card:nth-child(5n+2)>a>span:first-child{
+    background: #1abc9c;
+}
+.friends>.row>.friend_card:nth-child(5n+2)>a>span:nth-child(2){
+    background: #1abc9c;
+}
+.friends>.row>.friend_card:nth-child(5n+3)>a>span:first-child{
+    background: #f1c40f;
+}
+.friends>.row>.friend_card:nth-child(5n+3)>a>span:nth-child(2){
+    background: #f1c40f;
+}
+.friends>.row>.friend_card:nth-child(5n+4)>a>span:first-child{
+    background: #dc3545;
+}
+.friends>.row>.friend_card:nth-child(5n+4)>a>span:nth-child(2){
+    background: #dc3545;
+}
+.friends>.row>.friend_card:nth-child(5n+5)>a>span:first-child{
+    background: #9b59b6;
+}
+.friends>.row>.friend_card:nth-child(5n+5)>a>span:nth-child(2){
+    background: #9b59b6;
+}
+.friend_card>a>span:first-child{
+    background: #008eff;
+    border-radius:2px 2px  0 0;
+    color:white;
+    padding: 15px 20px 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.friend_card>a>span:nth-child(2){
+    padding: 0 20px 10px;
+    color:white;
+    background: #008eff;
+    font-size: 14px;
+    font-weight: 300;
+}
+.friend_card>a>span:nth-child(3){
+    padding: 32px 20px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.47);
+    background-color: #f5f5f5;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size: .875rem;
+}
+.friend_card>a>span:nth-child(4){
+    border-radius:0 0 2px 2px;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+}
+.friend_card>a>span:nth-child(4)>img{
+    width: 17px;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -705,6 +801,11 @@ body{
     .search_screen{
         height: 300px;
     }
+    .friend_card{
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
 }
 @media (min-width: 1600px) {
     .container {
@@ -765,6 +866,11 @@ body{
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .friend_card{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 }
 
 @media (max-width:768px){
@@ -818,6 +924,11 @@ body{
     }
     .search_meta{
         font-size: 12px;
+    }
+    .friend_card{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 @media (max-width: 460px){

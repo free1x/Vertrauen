@@ -246,12 +246,26 @@ function optionsframework_options() {
 		'type' => 'text'
 	);
 
+	$options[] = array(
+		'name' => __( '全局页面头图', 'Vertrauen_Setting' ),
+		'desc' => __( '添加一张图在全局页面展示.', 'Vertrauen_Setting' ),
+		'id' => 'default_banner',
+		'type' => 'upload'
+	);
+
     $options[] = array(
         'name' => __( '搜索页面头图', 'Vertrauen_Setting' ),
         'desc' => __( '添加一张图在搜索页面展示.', 'Vertrauen_Setting' ),
         'id' => 'search_banner',
         'type' => 'upload'
     );
+
+	$options[] = array(
+		'name' => __( '友情链接页面头图', 'Vertrauen_Setting' ),
+		'desc' => __( '添加一张图在友情链接页面展示.', 'Vertrauen_Setting' ),
+		'id' => 'friend_banner',
+		'type' => 'upload'
+	);
 
     $options[] = array(
         'name' => __( '文章默认缩略图', 'Vertrauen_Setting' ),

@@ -180,3 +180,15 @@ function my_unregister_widgets() {
 }
 
 include_once get_stylesheet_directory() . '/inc/weigets/search.php';
+
+
+function is_has_friend_ico($url){
+	$link = $url.'/favicon.ico';
+	$transfer = get_stylesheet_directory_uri().'/static/';
+	if(@file_get_contents($link,0,null,0,1))
+		return $link;
+	else
+		return $transfer.'/images/links.png';
+
+}
+

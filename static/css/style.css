@@ -360,6 +360,7 @@ body{
 }
 .content_sidebar{
     margin: 20px 0;
+    padding: 0 0 0 20px;
 }
 .side-widget{
     background: white;
@@ -396,8 +397,8 @@ body{
 .side-widget>ul>li>span{
     display: block;
     color:grey;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 13px;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 .tagcloud{
@@ -717,6 +718,9 @@ body{
 }
 .backTop>i{
     color:white;
+}
+.single-content{
+    margin: 20px 0;
 }
 @media (min-width: 1200px) {
     .container {

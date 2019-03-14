@@ -86,6 +86,8 @@ function Vertrauen_widgets($id){
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	));
+
+
 }
 
 add_action('widgets_init', 'Vertrauen_widgets');

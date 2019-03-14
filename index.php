@@ -99,7 +99,9 @@ get_header(); ?>
 	       <?php  Vertrauen_page()?>
        </div>
        <div class="content_sidebar col-4 <?php if(of_get_option( 'page_layout') == true){echo 'd-none';} ?>">
-            <?php get_sidebar() ?>
+	       <?php if(is_active_sidebar('sidebar')) : ?>
+		       <?php dynamic_sidebar('sidebar'); ?>
+	       <?php endif; ?>
        </div>
    </div>
 </div>

@@ -17,3 +17,32 @@ $(document).ready(function(){
         });
     });
 });
+
+$(document).ready(function() {
+    $.fn.postLike = function() {
+        if ($(this).hasClass('done')) {
+            return false;
+        } else {
+            $(this).addClass('done');
+            var id = $(this).data("id"),
+                action = $(this).data('action'),
+                rateHolder = $('.post_like_count>i>b');
+            var ajax_data = {
+                action: "Vertrauen_like",
+                um_id: id,
+                um_action: action
+            };
+            $.post("./wp-admin/admin-ajax.php", ajax_data,
+                function(data) {
+                    $(rateHolder).html(data);
+                });
+            return false;
+        }
+    };
+    $(document).on("click", ".favorite",
+        function() {
+            $(this).postLike();
+        });
+});
+
+

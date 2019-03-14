@@ -283,3 +283,29 @@ function cmp_breadcrumbs() {
 	}
 }
 
+add_action('wp_ajax_nopriv_Vertrauen_like', 'Vertrauen_like');
+add_action('wp_ajax_Vertrauen_like', 'Vertrauen_like');
+function Vertrauen_like(){
+	global $wpdb,$post;
+	$id = $_POST["um_id"];
+	$action = $_POST["um_action"];
+	if ( $action == 'ding'){
+		$Vertrauen_raters = get_post_meta($id,'Vertrauen_ding',true);
+		$expire = time() + 99999999;
+		$domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false; // make cookies work with localhost
+		setcookie('Vertrauen_ding_'.$id,$id,$expire,'/',$domain,false);
+		if (!$Vertrauen_raters || !is_numeric($Vertrauen_raters)) {
+			update_post_meta($id, 'Vertrauen_ding', 1);
+		}
+		else {
+			update_post_meta($id, 'Vertrauen_ding', ($Vertrauen_raters + 1));
+		}
+
+		echo get_post_meta($id,'Vertrauen_ding',true);
+
+	}
+
+	die;
+}
+
+

@@ -570,6 +570,9 @@ body{
 .banner_content_main{
     padding: 0;
 }
+.banner_content_main>.row{
+    padding: 0;
+}
 
 .search_form_content{
     text-align: center;
@@ -695,6 +698,25 @@ body{
 }
 .friend_card>a>span:nth-child(4)>img{
     width: 17px;
+}
+.tools{
+    position: fixed;
+    bottom: 70px;
+    right: 80px;
+}
+.backTop{
+    width: 50px;
+    height: 50px;
+    background: rgba(105, 105, 105, 0.41);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.backTop>i{
+    color:white;
 }
 @media (min-width: 1200px) {
     .container {

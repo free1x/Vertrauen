@@ -37,6 +37,7 @@
         <?php } ?>
         <script src="<?php echo $transfer.'/js/jquery-3.3.1.min.js' ?>" type="text/javascript"></script>
         <script src="<?php echo $transfer.'/js/bootstrap.min.js' ?>" type="text/javascript"></script>
+        <script src="<?php echo $transfer.'/js/Vertrauen.js' ?>" type="text/javascript"></script>
         <?php  if (of_get_option( 'content_fonts', 'no entry' )){ ?>
         <style>@import "https://fonts.googleapis.com/earlyaccess/notosanssc.css";*{font-family: Noto Sans SC,sans-serif}</style>
         <?php } ?>

@@ -33,7 +33,7 @@
                 <h4><?php echo of_get_option('footer_nav','请设置名称')?></h4>
                 <span></span>
 	            <?php
-	            wp_nav_menu( array( 'theme_location' => 'footerNav','顶部辅助栏'  => 'footerNav','container_class'  => 'footerNav', 'fallback_cb' => 'default_menu' ) );
+	                wp_nav_menu( array( 'theme_location' => 'footerNav','顶部辅助栏'  => 'footerNav','container_class'  => 'footerNav', 'fallback_cb' => 'default_menu' ) );
 	            ?>
             </div>
         </div>
@@ -44,3 +44,9 @@
         </div>
     </div>
 </footer>
+
+<div class="tools">
+    <div class="backTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</div>

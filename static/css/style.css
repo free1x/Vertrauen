@@ -722,6 +722,21 @@ body{
 .single-content{
     margin: 20px 0;
 }
+.single-content>.col-lg-8{
+    padding: 0;
+}
+#crumbs{
+    border-bottom: 1px solid rgba(216, 216, 216, 0.27);
+    background: white;
+    padding: 15px 20px;
+    font-size: 14px;
+    color:grey;
+}
+#crumbs>a{
+    font-size: 14px;
+    color: #4f5458 !important;
+    text-decoration: none;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;

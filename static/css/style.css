@@ -786,6 +786,7 @@ body{
     color: rgba(0,32,89,.44);
     transition: .5s;
 }
+
 .post_like>a:hover{
     color: #007bff;
     transition: .5s;

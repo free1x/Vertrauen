@@ -3,7 +3,7 @@
 	<div class="row single-content">
 		<div class="col-lg-8">
             <div class="post_tools">
-                <div class="post_like favorite">
+                <div class="post_like favorite <?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
                     <a href="#" data-action="ding" data-id="<?php the_ID(); ?>" class="favorite<?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
                         <span class="post_like_count">
                             <i class="fas fa-heart">
@@ -17,6 +17,10 @@
                             </i>
                         </span>
                     </a>
+                </div>
+
+                <div class="shareContent">
+
                 </div>
             </div>
 			<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>

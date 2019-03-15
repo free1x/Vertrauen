@@ -24,10 +24,10 @@ $(document).ready(function() {
             return false;
         } else {
             $(this).addClass('done');
-            var id = $(this).data("id"),
+            let id = $(this).data("id"),
                 action = $(this).data('action'),
                 rateHolder = $('.post_like_count>i>b');
-            var ajax_data = {
+            let ajax_data = {
                 action: "Vertrauen_like",
                 um_id: id,
                 um_action: action

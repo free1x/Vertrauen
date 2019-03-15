@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div class="container single p-0">
-	<div class="row single-content">
-		<div class="col-lg-8">
-            <div class="post_tools">
+	<div class="row single-content ">
+		<div class="col-lg-8 article">
+            <div class="post_tools ">
                 <div class="post_like favorite <?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
                     <a href="#" data-action="ding" data-id="<?php the_ID(); ?>" class="favorite<?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
                         <span class="post_like_count">
@@ -30,11 +30,14 @@
                 </div>
                <div class="single_info">
                    <span> <i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?></span>
+                   <span><i class="fab fa-wpforms"></i><?php echo count_words ($text); ?></span>
                   <span> <i class="fas fa-comments"></i><?php comments_number(); ?></span>
+                   <span><i class="far fa-eye"></i><?php echo getPostViews(get_the_ID()); ?></span>
 
                </div>
                 <div class="single_post">
 	                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		                <?php setPostViews(get_the_ID()); ?>
 		                <?php the_content(); ?>
 	                <?php endwhile; endif; ?>
                 </div>

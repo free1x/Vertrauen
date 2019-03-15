@@ -807,6 +807,29 @@ body{
     background: dimgrey;
     border-radius: 10px;
 }
+
+.single_post>ul>li{
+    list-style-type:circle
+}
+.single_post>ol>li{
+    list-style-type:decimal
+}
+.single_post blockquote{
+    color: #819198;
+    border-left: .375rem solid #dce6f0;
+    background: #f2f7fb;
+    padding: 11px;
+    margin: 0;
+    font-weight: 400;
+}
+p{
+    margin: 0;
+}
+.article img {
+    height: auto;
+    max-width: 100%;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;

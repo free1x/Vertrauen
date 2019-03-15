@@ -309,3 +309,36 @@ function Vertrauen_like(){
 }
 
 
+function count_words ($text) {
+	global $post;
+	if ( '' == $text ) {
+		$text = $post->post_content;
+		if (mb_strlen($output, 'UTF-8') < mb_strlen($text, 'UTF-8')) $output .= '文本统计 ' . mb_strlen(preg_replace('/\s/','',html_entity_decode(strip_tags($post->post_content))),'UTF-8') . ' 个文字';
+		return $output;
+	}
+}
+
+
+function getPostViews($postID){
+	$count_key = 'post_views_count';
+	$count = get_post_meta($postID, $count_key, true);
+	if($count==''){
+		delete_post_meta($postID, $count_key);
+		add_post_meta($postID, $count_key, '0');
+		return "阅读次数 0";
+	}
+	return '阅读次数 '.$count;
+}
+function setPostViews($postID) {
+	$count_key = 'post_views_count';
+	$count     = get_post_meta( $postID, $count_key, true );
+	if ( $count == '' ) {
+		$count = 0;
+		delete_post_meta( $postID, $count_key );
+		add_post_meta( $postID, $count_key, '0' );
+	} else {
+		$count ++;
+		update_post_meta( $postID, $count_key, $count );
+	}
+
+}

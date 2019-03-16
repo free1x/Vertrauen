@@ -71,7 +71,11 @@
                     <?php  if (of_get_option( 'content_logo', 'no entry' )){ ?>
                         <img src="<?php echo of_get_option( 'content_logo' ); ?>" alt="233">
                     <?php } ?>
+
+
+	                <?php  if (of_get_option( 'content_logo_text', 'no entry' )){ ?>
                     <span><?php echo of_get_option( 'seo_title', 'no entry' ); ?></span>
+	                <?php } ?>
                     <div class="clearfix"></div>
                 </div>
             </a>

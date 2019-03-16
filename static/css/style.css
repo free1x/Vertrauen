@@ -51,7 +51,7 @@ body{
     text-decoration: none;
 }
 .header_logo>img{
-    width: 50px;
+    height: 50px;
     float: left;
 }
 .header_logo>span{
@@ -73,8 +73,15 @@ body{
     padding: 0 20px;
 }
 .headerNav>ul>li>a{
-    color:black;
+    color: rgba(0, 0, 0, 0.81);
     font-weight: 200;
+    transition: .5s;
+    text-decoration: none;
+}
+.headerNav>ul>li>a:hover{
+    color: black;
+    transition: .5s;
+
 }
 .header_container{
     padding: 0;
@@ -303,11 +310,15 @@ body{
 
 }
 .post_list_content>h2>a{
-    color:black;
+    color: rgba(0, 0, 0, 0.8);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
+    text-decoration: none;
+}
+.post_list_content>h2>a:hover{
+    color: black;
 }
 .post_list_content_text{
     color: #404b69 !important;

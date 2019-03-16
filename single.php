@@ -42,10 +42,9 @@
 	                <?php endwhile; endif; ?>
                 </div>
             </div>
+			<?php comments_template(); ?>
 
-
-
-		</div>
+        </div>
 		<div class="col-lg-4">
 			<?php if(is_active_sidebar('sidebar')) : ?>
 				<?php dynamic_sidebar('sidebar'); ?>

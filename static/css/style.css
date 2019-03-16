@@ -775,6 +775,11 @@ body{
 }
 .single_post{
     margin: 0 20px 20px 20px;
+    padding-bottom: 20px;
+}
+.single_post p{
+    line-height: 2rem;
+    margin-bottom: 8px;
 }
 .post_tools{
     position: fixed;
@@ -839,6 +844,41 @@ p{
 .article img {
     height: auto;
     max-width: 100%;
+    margin: 20px 0;
+}
+.comment-body {
+    border: #ccc 1px solid;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+}
+.comment-meta {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    overflow: auto;
+}
+.comment-meta img {
+    float: left;
+    margin-right: 10px;
+}
+.comment-meta time {
+    margin-left: 12px;
+}
+.comment-reply-link {
+    background: #009acd;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+}
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 3px;
+    border: #ccc 1px solid;
+    margin-bottom: 20px;
+}
+.comment-form input {
+    height: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -906,6 +946,9 @@ p{
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .tools{
+        right: 30px;
+    }
 }
 @media (max-width: 1200px) {
     .content_page_list{
@@ -951,6 +994,7 @@ p{
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
+
 }
 @media (min-width: 1600px) {
     .container {
@@ -1016,6 +1060,7 @@ p{
         flex: 0 0 50%;
         max-width: 50%;
     }
+
 }
 
 @media (max-width:768px){
@@ -1043,6 +1088,13 @@ p{
     }
     .footerNav{
         padding-left: 18px!important;
+    }
+    .tools{
+        right: 30px;
+    }
+    .backTop{
+        width: 40px;
+        height: 40px;
     }
 
 }
@@ -1074,6 +1126,9 @@ p{
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .post_tools{
+        display: none;
     }
 }
 @media (max-width: 460px){

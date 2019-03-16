@@ -1,5 +1,6 @@
 $(document).ready(function(){
     let backTop = $('.backTop');
+
     backTop.hide();
     $(function () {
         $(window).scroll(function(){
@@ -16,6 +17,8 @@ $(document).ready(function(){
             return false;
         });
     });
+
+    
 });
 
 $(document).ready(function() {

@@ -50,3 +50,23 @@
         <i class="fas fa-chevron-up"></i>
     </div>
 </div>
+<?php  if (of_get_option( 'content_header', 'no entry' )){ ?>
+    <script>
+        $(function () {
+            let headerFixed = $('.header');
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>60){
+                    headerFixed.css('position','fixed');
+                    headerFixed.css('top','0');
+                    headerFixed.css('z-index','1000');
+                }
+                else
+                {
+                    headerFixed.css('position','initial');
+                    headerFixed.css('top','0');
+                }
+            });
+        })
+    </script>
+<?php } ?>
+

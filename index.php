@@ -65,13 +65,15 @@ get_header(); ?>
 		   ?>
                     <div class="page_content_list <?php if(of_get_option( 'page_layout') == true){echo 'page_content_max';}else{echo '';} ?>">
                         <div class="post_list_screen <?php if(of_get_option( 'page_layout') == true){echo 'col-4';}else{echo 'col-5';} ?>">
-		                    <?php
-		                    if ( has_post_thumbnail() ) {
-			                    echo "<img src='".get_the_post_thumbnail_url( $post_id )."'>";
-		                    }else{
-			                    echo "<img src='".of_get_option("search_thumb")."' alt>";
-		                    };
-		                    ?>
+                            <a href="<?php the_permalink(); ?>">
+	                            <?php
+	                            if ( has_post_thumbnail() ) {
+		                            echo "<img src='".get_the_post_thumbnail_url( $post_id )."'>";
+	                            }else{
+		                            echo "<img src='".of_get_option("search_thumb")."' alt>";
+	                            };
+	                            ?>
+                            </a>
                             <span><?php $the_post_category = get_the_category(get_the_ID()); echo $the_post_category[0]->cat_name; ?></span>
                         </div>
                         <div class="post_list_content <?php if(of_get_option( 'page_layout') == true){echo 'col-8';}else{echo 'col-7';} ?>">

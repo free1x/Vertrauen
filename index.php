@@ -87,7 +87,7 @@ get_header(); ?>
                             <small>
                                 <span><i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?></span>
                                 <span><i class="far fa-eye"></i><?php echo getPostViews(get_the_ID()); ?></span>
-                                <span><i class="fas fa-comments"></i><a href="<?php comments_link(); ?>"><?php comments_number(); ?></a></span>
+                                <span><i class="fas fa-comments"></i><a href="<?php comments_link(); ?>"><?php echo get_comments_number(); ?>条评论</a></span>
                             </small>
                         </div>
                         <div class="clearfix"></div>

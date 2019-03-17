@@ -31,7 +31,7 @@
                <div class="single_info">
                    <span> <i class="far fa-calendar-alt"></i> <?php the_time('Y年n月j日'); ?></span>
                    <span><i class="fab fa-wpforms"></i><?php echo count_words ($text); ?></span>
-                  <span> <i class="fas fa-comments"></i><?php comments_number(); ?></span>
+                  <span><i class="fas fa-comment-alt"></i><?php echo get_comments_number(); ?>条评论</span>
                    <span><i class="far fa-eye"></i><?php echo getPostViews(get_the_ID()); ?></span>
 
                </div>

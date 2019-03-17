@@ -40,8 +40,19 @@
 		                <?php setPostViews(get_the_ID()); ?>
 		                <?php the_content(); ?>
 	                <?php endwhile; endif; ?>
+
+
+	                <?php  if (of_get_option( 'page_notice' )){ ?>
+                        <span class="page_notice">
+                        作品采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可
+                        </span>
+	                <?php } ?>
+
                 </div>
+                <div class="single_tag"></div>
             </div>
+
+
 			<?php comments_template(); ?>
 
         </div>

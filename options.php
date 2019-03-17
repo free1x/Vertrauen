@@ -245,6 +245,14 @@ function optionsframework_options() {
     );
 
 	$options[] = array(
+		'name' => __( '文章版权显示', 'Vertrauen_Setting' ),
+		'desc' => __( '是否启用 GLP4.0 国际许可协议', 'Vertrauen_Setting' ),
+		'id' => 'page_notice',
+		'std' => '0',
+		'type' => 'checkbox'
+	);
+
+	$options[] = array(
 		'name' => __( '首页文章展示数', 'Vertrauen_Setting' ),
 		'desc' => __( '文章展示数', 'Vertrauen_Setting' ),
 		'id' => 'page_list_num',
@@ -281,6 +289,7 @@ function optionsframework_options() {
         'id' => 'search_thumb',
         'type' => 'upload'
     );
+
 
 
 

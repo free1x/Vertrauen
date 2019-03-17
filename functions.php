@@ -342,3 +342,4 @@ function setPostViews($postID) {
 	}
 
 }
+

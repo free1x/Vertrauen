@@ -1,3 +1,5 @@
+<div class="single_comments">
+	<h4>文章评论 (<?php echo get_comments_number(); ?>)</h4>
 <?php
 $args = array(
 	'walker'=> null,
@@ -20,7 +22,7 @@ $args = array(
 	// boolean, default is true
 );
 ?>
-<?php wp_list_comments($args, $comments); ?>
+<?php wp_list_comments($args); ?>
 <?php
 $form_args = array(
 	// change the title of send button
@@ -36,3 +38,6 @@ $form_args = array(
     </p>',
 );
 comment_form($form_args);
+
+?>
+</div>

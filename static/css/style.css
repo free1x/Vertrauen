@@ -880,7 +880,12 @@ p{
 .comment-form input {
     height: 30px;
 }
-
+.single_comments{
+    background: white;
+}
+.single_comments h4{
+    padding: 20px;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;

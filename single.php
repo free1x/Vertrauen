@@ -49,7 +49,21 @@
 	                <?php } ?>
 
                 </div>
-                <div class="single_tag"></div>
+                <div class="single_tools">
+                    <div class="single_tags">
+                        标签：
+	                    <?php
+	                    $posttags = get_the_tags();
+	                    foreach($posttags as $key => $value){ ?>
+                               <span><a href="<?php echo get_tag_link($value); ?>"><?php echo $value->name; ?></a></span>
+	                   <?php  }
+	                    ?>
+                    </div>
+                    <div class="single_copy">
+                        © 著作权归作者所有
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </div>
 
 

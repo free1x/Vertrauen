@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container single p-0">
 	<div class="row single-content ">
-		<div class="col-lg-8 article">
+        <div class="col-lg-1">
             <div class="post_tools ">
                 <div class="post_like favorite <?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
                     <a href="#" data-action="ding" data-id="<?php the_ID(); ?>" class="favorite<?php if(isset($_COOKIE['Vertrauen_ding_'.$post->ID])) echo ' done';?>">
@@ -23,6 +23,8 @@
 
                 </div>
             </div>
+        </div>
+		<div class="col-lg-7 article">
 			<?php if(function_exists('cmp_breadcrumbs')) cmp_breadcrumbs();?>
 			<div class="single-detail">
 				<div class="single_title">
@@ -53,10 +55,14 @@
                     <div class="single_tags">
                         标签：
 	                    <?php
-	                    $posttags = get_the_tags();
-	                    foreach($posttags as $key => $value){ ?>
-                               <span><a href="<?php echo get_tag_link($value); ?>"><?php echo $value->name; ?></a></span>
-	                   <?php  }
+                        if(has_tag()){
+	                        $posttags = get_the_tags();
+	                        foreach($posttags as $key => $value){ ?>
+                                <span><a href="<?php echo get_tag_link($value); ?>"><?php echo $value->name; ?></a></span>
+	                        <?php  }
+                        }else{
+                            echo "<span>暂无</span>";
+                        }
 	                    ?>
                     </div>
                     <div class="single_copy">

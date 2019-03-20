@@ -407,27 +407,6 @@ function optionsframework_options() {
     //结束
 
 
-	/**
-	 * For $settings options see:
-	 * http://codex.wordpress.org/Function_Reference/wp_editor
-	 *
-	 * 'media_buttons' are not supported as there is no post to attach items to
-	 * 'textarea_name' is set by the 'id' you choose
-	 */
-
-	$wp_editor_settings = array(
-		'wpautop' => true, // Default
-		'textarea_rows' => 5,
-		'tinymce' => array( 'plugins' => 'wordpress,wplink' )
-	);
-
-	$options[] = array(
-		'name' => __( 'Default Text Editor', 'theme-textdomain' ),
-		'desc' => sprintf( __( 'You can also pass settings to the editor.  Read more about wp_editor in <a href="%1$s" target="_blank">the WordPress codex</a>', 'theme-textdomain' ), 'http://codex.wordpress.org/Function_Reference/wp_editor' ),
-		'id' => 'example_editor',
-		'type' => 'editor',
-		'settings' => $wp_editor_settings
-	);
 
 	return $options;
 }

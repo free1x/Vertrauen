@@ -1241,7 +1241,10 @@ p{
 
 @media (max-width: 360px) {
     .container{
-        max-width: 300px;
+        max-width: 320px;
     }
-
+	.post_list_content>small {
+		font-size: 9px;
+		
+	}
 }

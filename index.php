@@ -81,7 +81,7 @@ get_header(); ?>
 	                            };
 	                            ?>
                             </a>
-                            <span><?php $the_post_category = get_the_category(get_the_ID()); echo $the_post_category[0]->cat_name; ?></span>
+                            <span><a href=""><?php $the_post_category = get_the_category(get_the_ID()); echo $the_post_category[0]->cat_name; ?></a></span>
                         </div>
                         <div class="post_list_content <?php if(of_get_option( 'page_layout') == true){echo 'col-8';}else{echo 'col-7';} ?>">
                             <h2 id="post-<?php the_ID(); ?>">

@@ -1151,7 +1151,7 @@ p{
         max-width: 50%;
     }
     .single-content>.col-lg-4{
-        padding: 0;
+        padding: 20px 15px;
     }
     .post_tools {
         display: none;

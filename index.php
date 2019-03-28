@@ -9,7 +9,12 @@
  */
 
 get_header(); ?>
-
+<?php   if(is_tag() || is_category()){ ?>
+<div class="search_header" style="background: url('<?php if(is_tag()){echo of_get_option( 'tags_banner' );}else{echo of_get_option( 'cat_banner');} ?>') no-repeat center;">
+    <h1><?php wp_title( '#'); ?></h1>
+</div>
+<?php } ?>
+<?php   if(!is_tag() && !is_category()){ ?>
 
 <?php  if (of_get_option( 'content_banner', 'no entry' )){ ?>
 <div class="container-fluid banner row" style="background: url('<?php echo of_get_option( 'banner_back_content' ); ?>') no-repeat center;">
@@ -18,21 +23,16 @@ get_header(); ?>
             <img src="<?php echo of_get_option( 'banner_content' ); ?>" alt="">
             <div class="banner_title"><?php echo get_post(of_get_option( 'banner_title' ))->post_title; ?></div>
         </div>
-
         <div class="banner_content_main col-7">
             <ul class="row">
 		        <?php
 		        $singleUrl = get_permalink($post_id);
-
 		        $cats = wp_get_post_categories($post->ID);
-
 		        if ($cats) {
-
 			        $args = array(
 				        'category__in' => array(of_get_option('banner_id','0')),
 				        'showposts' => 4,
 				        'caller_get_posts' => 1,
-
 			        );
 			        query_posts($args);
 			        if (have_posts()) :
@@ -47,12 +47,19 @@ get_header(); ?>
                             </li>
 				        <?php endwhile; else : ?>
                         <li class="banner_notice"> 当前分类下暂无文章</li>
-			        <?php endif; wp_reset_query(); } ?>                                                        </ul>
+			        <?php endif; wp_reset_query(); } ?>
+            </ul>
         </div>
     </div>
 </div>
 
 <?php } ?>
+<?php } ?>
+
+
+
+
+
 
 <div class="container content" id="content">
    <div class="post_content row">

@@ -290,6 +290,21 @@ function optionsframework_options() {
         'type' => 'upload'
     );
 
+    $options[] = array(
+        'name' => __( '分类页面头图', 'Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在分类页面展示.', 'Vertrauen_Setting' ),
+        'id' => 'cat_banner',
+        'type' => 'upload'
+    );
+
+    $options[] = array(
+        'name' => __( '标签页面头图', 'Vertrauen_Setting' ),
+        'desc' => __( '添加一张图在标签页面头图展示.', 'Vertrauen_Setting' ),
+        'id' => 'tags_banner',
+        'type' => 'upload'
+    );
+
+
 
 
 

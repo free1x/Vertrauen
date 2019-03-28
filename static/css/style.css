@@ -240,9 +240,9 @@ body{
 .search_meta{
     padding: 10px 15px;
     margin-bottom: 0;
-    color:#748594;
-    font-weight: 300;
-    font-size: 14px;
+    color: #404b69;
+    font-weight: 400;
+    font-size: 80%;
 }
 .search_meta>i{
     padding: 0 5px;
